@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hair Stylist Recorder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Client Recorder</h1>
+  <form id="clientForm">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="text" id="hair_type" placeholder="Hair Type" required>
+    <input type="number" id="cost" placeholder="Cost" required>
+    <button type="submit">Add Client</button>
+  </form>
+  <script>
+    document.getElementById('clientForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const hair_type = document.getElementById('hair_type').value;
+      const cost = document.getElementById('cost').value;
+      
+      fetch('/clients', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ name, hair_type, cost })
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Client added:', data);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+    });
+  </script>
+</body>
+</html>

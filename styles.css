@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Light aqua blue background */
+}
+
+header {
+    background-color: #ab47bc; /* Lighter purple background */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 4px solid #8e24aa; /* Darker purple border */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    margin: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #4fc3f7; /* Aqua blue background */
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    background-color: #0288d1; /* Darker aqua blue on hover */
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #4a148c; /* Darker purple text */
+}
+
+p {
+    color: #333;
+}
+
+form {
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #4a148c; /* Darker purple text */
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #b2dfdb; /* Light aqua blue border */
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4fc3f7; /* Aqua blue button */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #0288d1; /* Darker aqua blue button on hover */
+}
+
+#search-results {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #b2dfdb; /* Light aqua blue border */
+    border-radius: 4px;
+}
+
+#search-results div {
+    margin-bottom: 10px;
+}

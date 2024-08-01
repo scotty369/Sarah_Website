@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Client Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hair Salon Management System</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profile.html">Search Client Profile</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Add Client Profile</h2>
+        <form id="client-form">
+            <label for="name">Client Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="hair-description">Hair Description:</label>
+            <textarea id="hair-description" name="hair-description" required></textarea>
+            
+            <label for="services-rendered">Services Rendered:</label>
+            <textarea id="services-rendered" name="services-rendered" required></textarea>
+            
+            <label for="cost">Appointment Cost:</label>
+            <input type="number" id="cost" name="cost" required>
+            
+            <button type="submit">Save Profile</button>
+        </form>
+        <div id="message"></div>
+    </main>
+    <script src="client.js"></script>
+</body>
+</html>

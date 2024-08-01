@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Client Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>
+        <h1>Hair Salon Management System</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="client.html">Add Client Profile</a>
+            <a href="profile.html">Search Client Profile</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Search Client Profile</h2>
+        <form id="search-form">
+            <label for="search-name">Client Name:</label>
+            <input type="text" id="search-name" name="search-name" required>
+            
+            <button type="submit">Search</button>
+        </form>
+        <div id="search-results">
+            <!-- Client information will be displayed here -->
+        </div>
+    </main>
+    <script src="profile.js"></script>
+</body>
+</html>
