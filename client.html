@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Client Profile</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="profile.css">
 </head>
 <body>
     <header>
         <h1>Hair Salon Management System</h1>
         <nav>
             <a href="index.html">Home</a>
+            <a href="client.html">Add Client Profile</a>
             <a href="profile.html">Search Client Profile</a>
         </nav>
     </header>
@@ -19,19 +20,26 @@
         <form id="client-form">
             <label for="name">Client Name:</label>
             <input type="text" id="name" name="name" required>
-            
+
             <label for="hair-description">Hair Description:</label>
-            <textarea id="hair-description" name="hair-description" required></textarea>
-            
+            <input type="text" id="hair-description" name="hair-description" required>
+
+            <!-- Keep adding services to the profile -->
             <label for="services-rendered">Services Rendered:</label>
-            <textarea id="services-rendered" name="services-rendered" required></textarea>
-            
+            <input type="text" id="services-rendered" name="services-rendered" required>
+
             <label for="cost">Appointment Cost:</label>
             <input type="number" id="cost" name="cost" required>
-            
-            <button type="submit">Save Profile</button>
+
+            <!-- Date of Service -->
+            <label for="service-date">Date of Service:</label>
+            <input type="date" id="service-date" name="service-date" required>
+
+            <button type="submit">Add Client</button>
         </form>
-        <div id="message"></div>
+        <div id="add-result">
+            <!-- Client addition result will be displayed here -->
+        </div>
     </main>
     <script src="client.js"></script>
 </body>
