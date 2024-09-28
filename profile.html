@@ -20,11 +20,35 @@
         <form id="search-form">
             <label for="search-name">Client Name:</label>
             <input type="text" id="search-name" name="search-name" required>
-            
             <button type="submit">Search</button>
         </form>
+
         <div id="search-results">
-            <!-- Client information will be displayed here -->
+            <!-- Client profile and service log will be displayed here -->
+        </div>
+
+        <div id="edit-form-container" style="display: none;">
+            <h2>Edit Client Profile</h2>
+            <form id="edit-client-form">
+                <label for="edit-name">Client Name:</label>
+                <input type="text" id="edit-name" name="edit-name" disabled>
+
+                <label for="edit-hair-description">Hair Description:</label>
+                <input type="text" id="edit-hair-description" name="edit-hair-description" required>
+
+                <!-- Add a new service to the client's service log -->
+                <label for="edit-services-rendered">Services Rendered:</label>
+                <input type="text" id="edit-services-rendered" name="edit-services-rendered" required>
+
+                <label for="edit-cost">Appointment Cost:</label>
+                <input type="number" id="edit-cost" name="edit-cost" required>
+
+                <!-- Date of Service -->
+                <label for="edit-service-date">Date of Service:</label>
+                <input type="date" id="edit-service-date" name="edit-service-date" required>
+
+                <button type="submit">Update Client</button>
+            </form>
         </div>
     </main>
     <script src="profile.js"></script>

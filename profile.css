@@ -1,14 +1,14 @@
 /* Inherit general styles from styles.css */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Dancing Script', cursive;
     margin: 0;
     padding: 0;
     background-color: #e0f7fa; /* Light aqua blue background */
 }
 
 header {
-    background-color: #ab47bc; /* Lighter purple background */
+    background: linear-gradient(to right, #ab47bc, #4fc3f7); /* Ombre effect from purple to blue */
     color: white;
     padding: 15px;
     text-align: center;
@@ -28,13 +28,13 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
-    background-color: #4fc3f7; /* Aqua blue background */
+    background: linear-gradient(to right, #4fc3f7, #0288d1); /* Ombre effect for nav buttons */
     border-radius: 5px;
     margin: 0 10px;
 }
 
 nav a:hover {
-    background-color: #0288d1; /* Darker aqua blue on hover */
+    background: linear-gradient(to right, #0288d1, #4fc3f7); /* Reverse ombre effect on hover */
 }
 
 main {
@@ -74,17 +74,17 @@ input {
 }
 
 button {
-    background-color: #4fc3f7; /* Aqua blue button */
+    background: linear-gradient(to right, #4fc3f7, #0288d1); /* Ombre effect for button */
     color: white;
     padding: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 1em;
+    font-family: 'Dancing Script', cursive;
 }
 
 button:hover {
-    background-color: #0288d1; /* Darker aqua blue button on hover */
+    background: linear-gradient(to right, #0288d1, #4fc3f7); /* Reverse ombre effect on hover */
 }
 
 #search-results {

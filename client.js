@@ -6,10 +6,11 @@ document.getElementById('client-form').addEventListener('submit', function(event
     const hairDescription = document.getElementById('hair-description').value.trim();
     const servicesRendered = document.getElementById('services-rendered').value.trim();
     const cost = parseFloat(document.getElementById('cost').value.trim());
+    const date = document.getElementById('date').value;  // New date field
     
     // Basic validation
     const messageElement = document.getElementById('message');
-    if (!name || !hairDescription || !servicesRendered || isNaN(cost) || cost <= 0) {
+    if (!name || !hairDescription || !servicesRendered || isNaN(cost) || cost <= 0 || !date) {
         messageElement.innerText = 'Please fill out all fields correctly.';
         messageElement.style.color = 'red';
         return;
@@ -20,7 +21,8 @@ document.getElementById('client-form').addEventListener('submit', function(event
         name,
         hairDescription,
         servicesRendered,
-        cost
+        cost,
+        date  // Add date to the logged data
     });
     
     // Simulate saving data to local storage
@@ -28,7 +30,8 @@ document.getElementById('client-form').addEventListener('submit', function(event
     profiles[name] = {
         hairDescription,
         servicesRendered,
-        cost: `$${cost.toFixed(2)}`
+        cost: `$${cost.toFixed(2)}`,
+        date  // Store the date in the profile
     };
     localStorage.setItem('clientProfiles', JSON.stringify(profiles));
     
